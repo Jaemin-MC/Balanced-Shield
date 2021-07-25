@@ -24,12 +24,14 @@ class ShieldListener(private val plugin: Shield): Listener {
                 val damaged = shield_meta.damage
                 shield_meta.damage = damaged + event.damage.toInt()
                 shield.itemMeta = shield_meta as ItemMeta
+                event.isCancelled = true
             } else if (offhanditem.type == Material.SHIELD) {
                 val shield = offhanditem
                 val shield_meta = shield.itemMeta as Damageable
                 val damaged = shield_meta.damage
                 shield_meta.damage = damaged + event.damage.toInt()
                 shield.itemMeta = shield_meta as ItemMeta
+                event.isCancelled = true
             }
         }
     }
