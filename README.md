@@ -7,4 +7,4 @@ This Plugin makes Shield more easily break. While you're not shielding if you're
 
 
 #### New Version 1.0.0
-- Even You don't using Shield, It protects you from Entity's Attack. While You hold Shield.
+- Even You are not using Shield, It protects you from Entity's Attack. While You hold Shield.
